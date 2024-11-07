@@ -3,8 +3,12 @@
 
     require_once "baza.php";
 
-    if (  !isset($_POST["email"]) || !isset($_POST["password"]) || empty($_POST["email"]) || empty($_POST["password"])  ) {
-        die("niste prosledili email ili lozinku");
+    if (  !isset($_POST["email"]) || empty($_POST["email"])  ) {
+        die("niste prosledili email");
+    }
+
+    if (  !isset($_POST["password"])  || empty($_POST["password"])  ) {
+        die("niste prosledili lozinku");
     }
 
 

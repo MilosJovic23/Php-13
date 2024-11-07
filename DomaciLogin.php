@@ -6,8 +6,8 @@
     </head>
     <body>
     <form action="Domaci.php" method="POST">
-        <input type="text" name="email" placeholder="unesite email">
-        <input type="password" name="password" placeholder="uneiste lozinku">
+        <input type="text" name="email" placeholder="unesite email" required>
+        <input type="password" name="password" placeholder="uneiste lozinku" required>
         <button type="submit">Registruj me</button>
     </form>
     </body>
