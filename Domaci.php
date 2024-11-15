@@ -12,8 +12,9 @@
     }
 
 
-    $email = $_POST["email"];
-    $password = $_POST["password"];
+    $email = mysqli_real_escape_string( $baza, $_POST["email"] );
+    $password = mysqli_real_escape_string( $baza, $_POST["password"] );
+
 
 
     $baza->query("INSERT INTO korisnici(email,sifra) VALUES('$email','$password')");
