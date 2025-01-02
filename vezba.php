@@ -2,11 +2,9 @@
 
 
 
-
     require_once 'baza.php';
 
     $rezultat = $baza->query("SELECT * FROM proizvodi");
-
 
 
     if( $rezultat->num_rows > 0 ){
